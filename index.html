@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Water the Plants — Balaji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Start / loading dialog -->
+  <div id="startDialog" class="dialog">
+    <div class="dialog-inner">
+      <h1>Water the Plants</h1>
+      <p class="subtitle">Swipe up to throw water • Swipe left/right near bottom to move • Catch sunlight to charge Super Throw</p>
+      <div id="loaderText">Loading assets... 0%</div>
+      <div class="controls">
+        <button id="startBtn" disabled>Loading...</button>
+      </div>
+      <small class="hint">🌞 Stay sunny, stay green.</small>
+    </div>
+  </div>
+
+  <!-- end screen -->
+  <div id="endScreen" class="end-screen" style="display:none">Game Over</div>
+
+  <div id="byline">Game by Balaji</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
