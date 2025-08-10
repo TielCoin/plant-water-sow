@@ -311,7 +311,9 @@ if (orb) {
       running = false;
       // show end message
       endScreen.style.display = 'block';
-      setTimeout(() => { /* keep message visible */ }, 500);
+      setTimeout(() => {
+    window.location.reload(); // refresh after 2s
+  }, 2000);
     }
   }
 
